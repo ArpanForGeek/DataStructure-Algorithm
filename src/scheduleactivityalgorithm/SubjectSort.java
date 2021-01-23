@@ -41,6 +41,38 @@ public class SubjectSort {
         return noOfSubject;
     }
 
+//    static int count = 0;
+//    static int index = 0;
+//    static int noOfSubject = 0;
+//    static String endTime = null;
+
+
+//    /**
+//     *  Recursive call - best performance
+//     * @param list
+//     */
+//    private static void getTotalSubject(List<Subject> list) {
+//
+//        if (index == (list.size() - 1)) {
+//            return ;
+//        }
+//
+//        if (count == 0) {
+//            count++;
+//            endTime = list.get(index).getEndTime();
+//            noOfSubject++;
+//            index++;
+//        } else {
+//            if (list.get(index).getStartTime().compareTo(endTime) > 0) {
+//                endTime = list.get(index).getEndTime();
+//                noOfSubject++;
+//                index++;
+//            }
+//        }
+//        getTotalSubject(list);
+//        System.out.print("Maximum number of class can be attended : "+noOfSubject);
+//    }
+
     public static void main(String[] args) {
         /**
          * First input should be number of day
@@ -64,7 +96,7 @@ public class SubjectSort {
                     list.add(subject);
                 }
                 Collections.sort(list);
-                System.out.println(getTotalSubject(list));
+                System.out.print(getTotalSubject(list));
             }
 
         } catch (Exception e) {
