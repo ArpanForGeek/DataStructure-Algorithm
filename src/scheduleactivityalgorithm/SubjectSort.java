@@ -5,6 +5,15 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
 
+/**
+ * Schedule Activity algorithm -
+ * Step 1 : Sort Subjects based on End time
+ * Step 2 : Add first subject , then check next subject starts after first subject finishes or not . If yes then add next subject
+ * Step 3. Count all selected subjects.
+ * <p>
+ * Time Complexity - O(nlogn) as its not sorted . we are going to sort it
+ * Space Complexity - O(n) - as we are creating on ArrayList based on our input size n.
+ */
 public class SubjectSort {
 
     /**
